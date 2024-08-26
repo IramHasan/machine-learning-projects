@@ -1,7 +1,8 @@
 # Breast Cancer Diagnostic Tool
 
 ## Project Overview
-To create a web application to host a ML model that can accurately predict breast cancer diagnosis based on breast mass sample data.
+To create a web application to host a ML model that can accurately predict breast cancer diagnosis based on breast mass sample data.  
+![image]()
 
 ## Data Collection
 The data is taken from the Diagnostic Wisconsin Breast Cancer database.
