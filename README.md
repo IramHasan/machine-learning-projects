@@ -2,7 +2,7 @@
 
 ## Project Overview
 To create a web application to host a ML model that can accurately predict breast cancer diagnosis based on breast mass sample data.  
-![Application Interface](https://github.com/IramHasan/machine-learning-projects/main/cancer-tissue-predictor/assets/breast-cancer-predictor.png?raw=true)
+![application interface] (https://github.com/IramHasan/machine-learning-projects/blob/main/cancer-tissue-predictor/assets/breast-cancer-predictor.png)
 
 ## Data Collection
 The data is taken from the Diagnostic Wisconsin Breast Cancer database.
@@ -13,7 +13,7 @@ Prior to model training the data was cleaned by removing the "Unnamed: 32" colum
 Furthermore, we performed a transformation of the diagnosis values mapping begnign (B) to 0 and malignant (M) to 1. 
 
 ## Logistic Regression Model
-![image](https://github.com/user-attachments/assets/4588de16-3f27-4200-9aed-5c670754f05e)  
+![logistic regression equation](https://github.com/user-attachments/assets/4588de16-3f27-4200-9aed-5c670754f05e)  
 
 We will take numerical inputs in the form of the 30 features which are traditionally used to determine cell characteristics. This will be the input for a logistic regression model. The logistic regression model will provide a categorical value either begnign or malignant. 
 The above equation is the logisitc regression equation used to transform our regression data to values between 0 and 1.
