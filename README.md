@@ -2,7 +2,7 @@
 
 ## Project Overview
 To create a web application to host a ML model that can accurately predict breast cancer diagnosis based on breast mass sample data.  
-![image]()
+![Application Interface](https://github.com/IramHasan/machine-learning-projects/main/cancer-tissue-predictor/assets/breast-cancer-predictor.png?raw=true)
 
 ## Data Collection
 The data is taken from the Diagnostic Wisconsin Breast Cancer database.
