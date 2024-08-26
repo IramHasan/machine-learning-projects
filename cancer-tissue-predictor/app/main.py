@@ -4,7 +4,7 @@ import pandas as pd
 import plotly.graph_objects as go
 import numpy as np
 def get_clean_data():
-    data = pd.read_csv("cancer-tissue-predictor/data/data.csv")
+    data = pd.read_csv("data/data.csv")
     data = data.drop(['Unnamed: 32', 'id'], axis=1) # data cleaning - remove id and unnamed:32 col from dataset
     data['diagnosis'] = data['diagnosis'].map({'B': 0, 'M': 1}) # data cleaning - change 'B' and 'M' to 0 and 1 for logistic regression
     return data
@@ -161,8 +161,8 @@ def get_radar_chart(input_data):
     return fig
 
 def add_predictions(input_data): # input is a dict with key : value pairs 
-    model = pickle.load(open("cancer-tissue-predictor/model/model.pkl", "rb")) # load and open model in read binary mode
-    scaler = pickle.load(open("cancer-tissue-predictor/model/scaler.pkl", "rb")) # load and open scaler in read binary mode
+    model = pickle.load(open("model/model.pkl", "rb")) # load and open model in read binary mode
+    scaler = pickle.load(open("model/scaler.pkl", "rb")) # load and open scaler in read binary mode
 
     input_array = np.array(list(input_data.values())).reshape(1, -1) # convert input dict to array with shape (1, 30) to represent features for a prediction
     input_array_scaled = scaler.transform(input_array)
@@ -190,7 +190,7 @@ def main():
     )
 
     # add stylesheet
-    with open("cancer-tissue-predictor/assets/style.css") as f:
+    with open("assets/style.css") as f:
         st.markdown("<style>{}<style>".format(f.read()), unsafe_allow_html=True)
 
     # create sidebar
