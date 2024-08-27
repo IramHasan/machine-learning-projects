@@ -5,6 +5,9 @@ To create a web application to host a ML model that can accurately predict breas
 
 ![application interface](https://github.com/IramHasan/machine-learning-projects/blob/main/cancer-tissue-predictor/assets/breast-cancer-predictor.PNG)  
 
+
+Original article: [Nuclear Feature Extraction For Breast Tumor Diagnosis](https://www.semanticscholar.org/paper/Nuclear-feature-extraction-for-breast-tumor-Street-Wolberg/53f0fbb425bc14468eb3bf96b2e1d41ba8087f36)
+
 ## Data Collection
 The data is taken from the Diagnostic Wisconsin Breast Cancer database.
 Features are from digitzed images of fine needle aspirate (FNA) of breast tissue mass, and attempt to describe the characteristics of cell nuclei present in the image. There are 30 features present in the raw data used to create a classification model.
